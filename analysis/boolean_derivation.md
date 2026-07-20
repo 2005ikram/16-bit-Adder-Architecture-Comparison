@@ -69,7 +69,8 @@ C=A\cdot B
 
 - Sum is implemented using an XOR gate.
 - Carry is implemented using an AND gate.
-- # Full Adder
+   
+ # Full Adder
 
 ## Purpose
 
@@ -121,7 +122,56 @@ C_{out}=AB+ACin+BCin
 
 - Sum is the XOR of the three inputs.
 - Carry is generated when at least two inputs are 1.
-- 
+# Generate Signal
+
+## Purpose
+
+Derive the Generate signal used by the Carry Lookahead Adder.
+
+Rows where **G = 1**:
+
+- (1,1)
+
+Therefore,
+
+\[
+G=A\cdot B
+\]
+
+## Key Takeaways
+
+- Generate depends only on A and B.
+- It produces a carry without requiring an input carry.
+# Propagate Signal
+
+## Purpose
+
+Derive the Propagate signal.
+
+Rows where **P = 1**:
+
+- (0,1)
+- (1,0)
+
+Therefore,
+
+\[
+P=A'B+AB'
+\]
+
+Using the XOR identity,
+
+\[
+P=A\oplus B
+\]
+
+## Key Takeaways
+
+- Propagate depends only on A and B.
+- It passes an incoming carry to the next stage.   
+  
+  
+ 
 
 
 
