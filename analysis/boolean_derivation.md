@@ -42,17 +42,17 @@ Rows where **S = 1**:
 - (1,0) → AB'
 
 Therefore,
-
+$$
 \[
 S=A'B+AB'
 \]
-
+$$
 Using the XOR identity,
-
+$$
 \[
 S=A\oplus B
 \]
-
+$$
 ## Carry Derivation
 
 Rows where **C = 1**:
@@ -60,11 +60,11 @@ Rows where **C = 1**:
 - (1,1) → AB
 
 Therefore,
-
+$$
 \[
 C=A\cdot B
 \]
-
+$$
 ## Key Takeaways
 
 - Sum is implemented using an XOR gate.
@@ -86,17 +86,17 @@ Rows where **S = 1**:
 - (1,1,1)
 
 Therefore,
-
+$$
 \[
 S=A'B'Cin+A'BCin'+AB'Cin'+ABCin
 \]
-
+$$
 This simplifies to
-
+$$
 \[
 S=A\oplus B\oplus Cin
 \]
-
+$$
 ## Carry Derivation
 
 Rows where **Cout = 1**:
@@ -107,17 +107,17 @@ Rows where **Cout = 1**:
 - (1,1,1)
 
 Therefore,
-
+$$
 \[
 C_{out}=A'BCin+AB'Cin+ABCin'+ABCin
 \]
-
+$$
 Simplifying,
-
+$$
 \[
 C_{out}=AB+ACin+BCin
 \]
-
+$$
 ## Key Takeaways
 
 - Sum is the XOR of the three inputs.
@@ -133,11 +133,11 @@ Rows where **G = 1**:
 - (1,1)
 
 Therefore,
-
+$$
 \[
 G=A\cdot B
 \]
-
+$$
 ## Key Takeaways
 
 - Generate depends only on A and B.
@@ -154,17 +154,17 @@ Rows where **P = 1**:
 - (1,0)
 
 Therefore,
-
+$4
 \[
 P=A'B+AB'
 \]
-
+$$
 Using the XOR identity,
-
+$$
 \[
 P=A\oplus B
 \]
-
+$$
 ## Key Takeaways
 
 - Propagate depends only on A and B.
