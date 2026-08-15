@@ -26,3 +26,4 @@ The CLA16 achives a shorter theoritical critical path at the cost of additional 
 ## Simulation
 The adders were functionally simulated using Icarus Verilog.
 Waveforms were inspected using GTKWave.
+
